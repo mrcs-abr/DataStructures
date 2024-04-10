@@ -1,26 +1,19 @@
 monthNumber = int(input())
 
-if monthNumber == 1:
-    print("Janeiro")
-elif monthNumber == 2:
-    print("Fevereiro")
-elif monthNumber == 3:
-    print("Marco")
-elif monthNumber == 4:
-    print("Abril")
-elif monthNumber == 5:
-    print("Maio")
-elif monthNumber == 6:
-    print("Junho")
-elif monthNumber == 7:
-    print("Julho")
-elif monthNumber == 8:
-    print("Agosto")
-elif monthNumber == 9:
-    print("Setembro")
-elif monthNumber == 10:
-    print("Outubro")
-elif monthNumber == 11:
-    print("Novembro")
-else:
-    print("Dezembro")
+months = {
+    1: "Janeiro", 
+    2: "Fevereiro", 
+    3: "Marco",
+    4: "Abril",
+    5: "Maio",
+    6: "Junho",
+    7: "Julho",
+    8: "Agosto",
+    9: "Setembro",
+    10: "Outubro",
+    11: "Novembro",
+    12: "Dezembro"
+}
+
+if monthNumber in months:
+    print(months[monthNumber])
