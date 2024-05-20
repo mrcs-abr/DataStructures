@@ -10,10 +10,16 @@ O caracter com maior frequência.
 Observações: Implemente apenas a função, o código de teste se encarrega de ler a entrada, chamar a função e imprimir o resultado.
 """
 
-def frequencia(message):
-    charList = list(message)
-    count = 0
+def frequencia(s):
+    chars = list(s)
+    greater = 0
+    commonChar = ""
 
-    return charList
+    for c in chars:
+        counting = chars.count(c)
+        if counting > greater:
+            greater = counting
+            commonChar = c
+    return commonChar
 
 print(frequencia("Estrutura de Dados"))
