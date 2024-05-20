@@ -1,3 +1,15 @@
+'''
+Qual mês é?
+Meses podem ser identificados por números ou pelos próprio nome. Dado um valor inteiro m
+ identificando um mês, indique o nome deste mês do ano.
+
+Entrada
+A entrada contém uma linha com um valor inteiro 1≤m≤12.
+
+Saída
+O nome do mês indicado pelo número lido, por extenso e com a primeira letra maiúscula. Use apenas caracteres ASCII.
+'''
+
 monthNumber = int(input())
 
 months = {
