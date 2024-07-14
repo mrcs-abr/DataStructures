@@ -1,3 +1,3 @@
 # Data-Structures
 
-A repository that contains my studies on data structures
+A repository that contains my studies in the discipline data structures.
