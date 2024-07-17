@@ -20,7 +20,7 @@ class Stack:
     
     def peek(self):
         if self.isEmpty():
-            return "No items to be removed"
+            return "No items at the moment"
         
         return self.items[-1]
     
