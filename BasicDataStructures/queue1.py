@@ -10,12 +10,16 @@ class Queue:
         return self.items.append(item)
     
     def dequeue(self):
+        if self.isEmpty():
+            return "No items to be removed"
+        
         return self.items.pop(0)
     
     def size(self):
         return len(self.items)
     
     def peek(self):
-        return self.items[0]
-
+        if self.isEmpty():
+            return "No items to be removed"
         
+        return self.items[0]

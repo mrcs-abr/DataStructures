@@ -10,11 +10,17 @@ class Stack:
         return self.items.append(item)
     
     def pop(self):
+        if self.isEmpty():
+            return "No items to be removed"
+        
         return self.items.pop()
     
     def size(self):
         return len(self.items)
     
     def peek(self):
+        if self.isEmpty():
+            return "No items to be removed"
+        
         return self.items[-1]
     
