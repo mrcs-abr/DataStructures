@@ -16,10 +16,19 @@ class Node:
     def setNext(self, new_next):
         self.next = new_next
 
-class Unordered_list(self):
+class Unordered_list:
     
     def __init__(self):
         self.head = None
+    
+    def __str__(self):
+        tmp = self.head
+        lstr = ''
+        while tmp != None:
+            lstr += str(tmp.data) + ' '
+            tmp = tmp.getNext()
+            
+        return lstr
     
     def isEmpty(self):
         return self.head == None
@@ -66,7 +75,7 @@ class Unordered_list(self):
             self.head = current.getNext()
         else:
             previous.setNext(current.getNext())
-
+    
 
 
 
